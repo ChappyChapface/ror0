@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:slime_ball"
+    },
+    "2": {
+      "item": "minecraft:slime_ball"
+    },
+    "3": {
+      "item": "minecraft:slime_ball"
+    },
+    "5": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "tnunlimited:slime_armour_boots",
+    "count": 1
+  }
+}
