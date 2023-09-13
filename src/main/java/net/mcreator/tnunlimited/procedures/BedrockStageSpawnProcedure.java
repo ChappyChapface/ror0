@@ -3,7 +3,6 @@ package net.mcreator.tnunlimited.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
@@ -22,8 +21,8 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class BedrockStageSpawnProcedure {
 	@SubscribeEvent
-	public static void onEntityEndSleep(PlayerWakeUpEvent event) {
-		execute(event, event.getEntity().level);
+	public static void onWorldLoad(net.minecraftforge.event.level.LevelEvent.Load event) {
+		execute(event, event.getLevel());
 	}
 
 	public static void execute(LevelAccessor world) {

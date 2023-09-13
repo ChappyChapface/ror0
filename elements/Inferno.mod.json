@@ -2,16 +2,19 @@
   "_fv": 43,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Dryout",
-    "icon": "dryoute.png",
+    "effectName": "Inferno",
+    "icon": "infernoe.png",
     "color": {
-      "value": -10066330,
+      "value": -13261,
       "falpha": 0.0
     },
     "isInstant": false,
     "isBad": true,
     "isBenefitical": false,
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "InfernoEffect"
+    }
   }
 }

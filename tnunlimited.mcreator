@@ -16346,6 +16346,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -19371,12 +19375,7 @@
         "files": [
           "src/main/java/net/mcreator/tnunlimited/procedures/CoronerSkinProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -22662,6 +22661,68 @@
           "src/main/resources/assets/tnunlimited/models/item/ocean_waste.json"
         ]
       }
+    },
+    {
+      "name": "DryoutDisc",
+      "type": "musicdisc",
+      "sortid": 1286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dryout_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/dryout_disc.json",
+          "src/main/java/net/mcreator/tnunlimited/item/DryoutDiscItem.java"
+        ]
+      }
+    },
+    {
+      "name": "InfernoEffect",
+      "type": "procedure",
+      "sortid": 1287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inferno_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/InfernoEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inferno",
+      "type": "potioneffect",
+      "sortid": 1288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inferno",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/potion/InfernoMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -23262,6 +23323,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "dryout",
+      "files": [
+        "dryout"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -23288,8 +23357,8 @@
       "item.tnunlimited.kkoreul_bullet": "Kkoreul Bullet",
       "item.minecraft.tipped_arrow.effect.potion_of_flurry_plus": "Arrow of Flurry",
       "gui.tnunlimited.nitro_charge.label_varintegerenergybladecharge": "\u003cVAR:integer:energybladecharge\u003e",
-      "item.tnunlimited.jar_of_infinite_jellybeans": "Jar of Infinite Jellybeans",
       "item.tnunlimited.shieldring": "Shield Ring",
+      "item.tnunlimited.jar_of_infinite_jellybeans": "Jar of Infinite Jellybeans",
       "item.tnunlimited.buckler": "Buckler",
       "advancements.pepperonis_will_slay_you_for_this_advancement.title": "True Pepperoni Fashion",
       "item.tnunlimited.cakeblobammo": "Cakeblobammo",
@@ -23313,13 +23382,13 @@
       "advancements.classes.title": "Classes",
       "subtitles.coroner_idle": "Coroner Idle",
       "item.tnunlimited.kkoreul_spawn_egg": "Kkoreul Spawn Egg",
-      "item.tnunlimited.amethyst_fireball": "Amethyst Fireball",
       "effect.tnunlimited.overcharged_cleaver_dash_effect": "Dash Timer",
+      "item.tnunlimited.amethyst_fireball": "Amethyst Fireball",
       "item.tnunlimited.netherite_wand": "Netherite Wand",
       "item.tnunlimited.pearl": "Pearl",
       "item.tnunlimited.aarduimsword": "Aardium sword",
-      "item.tnunlimited.soulfire_spike": "Soulfire Spike",
       "advancements.kkoreul_advancement.title": "Scourge of the Reef",
+      "item.tnunlimited.soulfire_spike": "Soulfire Spike",
       "subtitles.treebark": "Deadly_Golem - Tree Bark",
       "subtitles.plunder_n_blunderbuss-loop": "",
       "item.tnunlimited.fancy_pants_leggings": "Fancy Pants",
@@ -23340,10 +23409,10 @@
       "advancements.blood_for_the_blood_god.descr": "Obtain \u0027Staff of the Blood God\u0027",
       "block.tnunlimited.blockofrawlead": "Block of Raw Lead",
       "item.minecraft.lingering_potion.effect.potion_of_flurry_plus": "Lingering Potion of Flurry",
-      "item.tnunlimited.nitroblade": "Nitro Blade",
       "gui.tnunlimited.accessories.button_equip": "EQUIP",
-      "advancements.mocha_advancement.title": "The Ultimate Brew!!",
+      "item.tnunlimited.nitroblade": "Nitro Blade",
       "entity.tnunlimited.frost_ant": "Frost Ant",
+      "advancements.mocha_advancement.title": "The Ultimate Brew!!",
       "item.tnunlimited.pinacate_beetle_spawn_egg": "Pinacate Beetle Spawn Egg",
       "item.tnunlimited.glass_skull_helmet": "Glass Skull",
       "item.minecraft.splash_potion.effect.instant_depletion": "Splash Potion of Instant Depletion",
@@ -23357,6 +23426,7 @@
       "item.tnunlimited.desert_roach_armor_boots": "Desert Roach Boots",
       "item.tnunlimited.cookedbacon": "Cooked Bacon",
       "item.tnunlimited.miracle_rune": "Miracle Rune",
+      "item.tnunlimited.dryout_disc.desc": "Chapface - Dryout",
       "block.tnunlimited.lead_bars": "Lead Bars",
       "enchantment.tnunlimited.butchering": "Butchering",
       "item.tnunlimited.killer_banana": "Killer Banana",
@@ -23367,8 +23437,8 @@
       "block.tnunlimited.blue_shroom_stem": "Purple Shroom Stem",
       "block.tnunlimited.supergranite": "Crystaline Energy",
       "item.tnunlimited.iron_club": "Iron Club",
-      "item.tnunlimited.flintlock": "Flintlock",
       "item.minecraft.potion.effect.potion_of_flurry": "Potion of Flurry",
+      "item.tnunlimited.flintlock": "Flintlock",
       "item.minecraft.lingering_potion.effect.frostburn_potion": "Lingering Potion of Frostburn",
       "item.tnunlimited.primal_chestplate": "Primal Top",
       "gui.tnunlimited.starter_class.label_starter_class": "Select Class",
@@ -23398,8 +23468,8 @@
       "item.tnunlimited.frost_bullet_projectile": "Bullet Projectile",
       "item.tnunlimited.iceball": "Iceball",
       "item.tnunlimited.pirate_captain_spawn_egg": "Pirate Captain Spawn Egg",
-      "item.tnunlimited.witch_leggings": "Witch Leggings",
       "effect.tnunlimited.paranoia": "Paranoia",
+      "item.tnunlimited.witch_leggings": "Witch Leggings",
       "gui.tnunlimited.stat_sheet.label_kbr": "KBR:",
       "item.minecraft.potion.effect.replenishment_plus": "Potion of Replenishment",
       "gui.tnunlimited.overdrive_table_ui.button_overdrive": "OVERDRIVE",
@@ -23426,8 +23496,8 @@
       "item.tnunlimited.dark_warhammer": "Dark Warhammer",
       "item.tnunlimited.torch_of_guidance": "Torch of Guidance",
       "block.tnunlimited.blockof_aardium": "Block of Aardium",
-      "item.minecraft.tipped_arrow.effect.frostburn_potion": "Arrow of Frostburn",
       "item.tnunlimited.pepperoni_ingot": "Pepperoni Ingot",
+      "item.minecraft.tipped_arrow.effect.frostburn_potion": "Arrow of Frostburn",
       "death.attack.parasite.player": "%1$s tasted great",
       "item.tnunlimited.frostburn_sphere": "Frostburn Sphere",
       "gamerule.milkNerf.description": "Milk can no longer be used if you have a negative potion effect.",
@@ -23442,8 +23512,8 @@
       "item.minecraft.potion.effect.potion_of_flurry_plus": "Potion of Flurry",
       "item.tnunlimited.crown_of_pride": "Crown of Pride",
       "item.tnunlimited.gamblers_lucky_coin": "Gambler\u0027s Lucky Coin",
-      "item.tnunlimited.rushring": "Rush Ring",
       "block.tnunlimited.cakesplatter": "Cakesplatter",
+      "item.tnunlimited.rushring": "Rush Ring",
       "item.tnunlimited.sword_saber": "Sword Saber",
       "item.tnunlimited.sunrise.desc": "Pokeplaza - Sunrise",
       "item.minecraft.tipped_arrow.effect.potion_of_flurry_ii": "Arrow of Flurry",
@@ -23457,8 +23527,8 @@
       "item.tnunlimited.birthday_block_boy_helmet": "Birthday Block Boy",
       "item.tnunlimited.the_dragon_guarding_the_abyss.desc": "Pokeplaza - The Dragon Guarding the Abyss",
       "item.tnunlimited.witch_boots": "Witch Boots",
-      "effect.tnunlimited.gilded_bug_buff": "Gilded Bug",
       "block.tnunlimited.tangelo_blossom": "Tangelo Blossom",
+      "effect.tnunlimited.gilded_bug_buff": "Gilded Bug",
       "entity.tnunlimited.wastelandish_hopper": "Wastelandish Hopper",
       "item.tnunlimited.diorite_leggings": "Diorite Leggings",
       "block.tnunlimited.blue_shroomslate": "Purple Shroomslate",
@@ -23485,6 +23555,7 @@
       "advancements.tank_unlock.descr": "Take 250 total damage",
       "item.tnunlimited.slime_armour_helmet": "Slime Helmet",
       "effect.tnunlimited.sturdy": "Sturdy",
+      "item.tnunlimited.dryout_disc": "Music Disc",
       "item.tnunlimited.aardiumingo_axe": "Aardium Axe",
       "enchantment.tnunlimited.beatdown": "Beatdown",
       "subtitles.ocean_waste-loop": "",
@@ -23508,12 +23579,12 @@
       "item.tnunlimited.aardium_needle": "Aardium Needle",
       "gui.tnunlimited.stat_sheet.label_varmovementspeedincrease": "\u003cVAR:movementSpeedIncrease\u003e",
       "item.tnunlimited.frost_ant_queen_phase_2_spawn_egg": "Frost Ant Queen Spawn Egg",
-      "gui.tnunlimited.mana_bar.label_varintegermana": "\u003cVAR:integer:mana\u003e",
       "item.tnunlimited.desert_chitin": "Desert Chitin",
+      "gui.tnunlimited.mana_bar.label_varintegermana": "\u003cVAR:integer:mana\u003e",
       "entity.tnunlimited.dune_spider": "Dune Spider",
       "gamerule.purgatoryMode.description": "Greatly increased diffiuclty. Increased loot.",
-      "item.tnunlimited.desert_ingot": "Desert Ingot",
       "item.tnunlimited.lead_bullet": "Lead Bullet",
+      "item.tnunlimited.desert_ingot": "Desert Ingot",
       "item.tnunlimited.wither_and_rot": "Music Disc",
       "block.tnunlimited.zinc_block": "Block of Zinc",
       "block.tnunlimited.dacite_bricks_wall": "Dacite Bricks Wall",
@@ -23855,6 +23926,7 @@
       "gui.tnunlimited.stat_sheet.label_varfamiliarspdincrease": "\u003cVAR:familiarSPDIncrease\u003e",
       "block.tnunlimited.plush_aardvarkman": "Plush Aardvarkman",
       "block.tnunlimited.purple_shroomslate_stairs": "Purple Shroomslate Stairs",
+      "subtitles.dryout": "",
       "item.tnunlimited.mocha": "Mocha",
       "item.tnunlimited.lady_bug_shell": "Lady Bug Shell",
       "item.tnunlimited.super_speed_boots": "Super Speed Boot",
@@ -23992,6 +24064,7 @@
       "gamerule.nerfProtection": "Nerf Protection and Resistance",
       "item.tnunlimited.golden_cactus_pet": "Golden Pet Cactus",
       "gui.tnunlimited.stat_sheet.label_vargunstrengthincrease": "\u003cVAR:gunStrengthIncrease\u003e",
+      "effect.tnunlimited.inferno": "Inferno",
       "item.tnunlimited.enchanted_scroll_of_fortune": "Enchanted Scroll",
       "item.tnunlimited.iron_spike": "Iron Spike",
       "item.minecraft.potion.effect.bludgeoning_plus": "Potion of Bludgeoning",

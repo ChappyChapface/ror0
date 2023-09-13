@@ -39,4 +39,5 @@ public class TnunlimitedModSounds {
 	public static final RegistryObject<SoundEvent> PLUNDER_N_BLUNDERBUSS_RECORD = REGISTRY.register("plunder_n_blunderbuss-record", () -> new SoundEvent(new ResourceLocation("tnunlimited", "plunder_n_blunderbuss-record")));
 	public static final RegistryObject<SoundEvent> OCEAN_WASTE_RECORD = REGISTRY.register("ocean_waste-record", () -> new SoundEvent(new ResourceLocation("tnunlimited", "ocean_waste-record")));
 	public static final RegistryObject<SoundEvent> OCEAN_WASTE_INTRO = REGISTRY.register("ocean_waste-intro", () -> new SoundEvent(new ResourceLocation("tnunlimited", "ocean_waste-intro")));
+	public static final RegistryObject<SoundEvent> DRYOUT = REGISTRY.register("dryout", () -> new SoundEvent(new ResourceLocation("tnunlimited", "dryout")));
 }

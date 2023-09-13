@@ -21,6 +21,6 @@ public class RoseGoldRingItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A7aWhen Equipped:"));
-		list.add(Component.literal("\u00A77+10% Ranged Damage"));
+		list.add(Component.literal("\u00A77+20% Ranged Damage"));
 	}
 }

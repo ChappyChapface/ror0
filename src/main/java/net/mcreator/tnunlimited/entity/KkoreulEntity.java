@@ -263,8 +263,8 @@ public class KkoreulEntity extends Monster implements IAnimatable {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
-		builder = builder.add(Attributes.MAX_HEALTH, 100);
-		builder = builder.add(Attributes.ARMOR, 20);
+		builder = builder.add(Attributes.MAX_HEALTH, 250);
+		builder = builder.add(Attributes.ARMOR, 10);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1000);

@@ -56,7 +56,7 @@ public class HeatwaveItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7aAbility: \u00A77Engulfs enemies in flames"));
+		list.add(Component.literal("\u00A7aAbility: \u00A77Inflicts enemies with Inferno"));
 		list.add(Component.literal("\u00A79Melee/Slashing"));
 	}
 }

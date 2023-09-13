@@ -206,5 +206,13 @@
         "stream": true
       }
     ]
+  },
+  "dryout": {
+    "sounds": [
+      {
+        "name": "tnunlimited:dryout",
+        "stream": true
+      }
+    ]
   }
 }

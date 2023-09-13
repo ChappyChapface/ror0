@@ -71,10 +71,10 @@ public class HolyRelicEffectProcedure {
 					&& (!(((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)).isEnchanted())
 							|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
 				if (amount > 4) {
+					entity.hurt(DamageSource.OUT_OF_WORLD, 4);
 					if (event != null && event.isCancelable()) {
 						event.setCanceled(true);
 					}
-					entity.hurt(DamageSource.OUT_OF_WORLD, 4);
 				}
 			}
 		}

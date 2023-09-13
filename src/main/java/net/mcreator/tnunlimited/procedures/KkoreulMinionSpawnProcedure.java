@@ -30,7 +30,7 @@ public class KkoreulMinionSpawnProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 255, true, false));
 		TnunlimitedMod.queueServerWork(60, () -> {
-			if (entity instanceof Mob _entity && ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).stream().sorted(new Object() {
+			if (entity instanceof Mob _entity && ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 25, 25, 25), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
@@ -40,7 +40,7 @@ public class KkoreulMinionSpawnProcedure {
 				((KkoreulMinionEntity) entity).setAnimation("animation.KkoreulMinion.shoot");
 			}
 			TnunlimitedMod.queueServerWork(25, () -> {
-				for (int index0 = 0; index0 < 5; index0++) {
+				for (int index0 = 0; index0 < 10; index0++) {
 					{
 						Entity _shootFrom = entity;
 						Level projectileLevel = _shootFrom.level;
@@ -56,7 +56,7 @@ public class KkoreulMinionSpawnProcedure {
 								}
 							}.getArrow(projectileLevel, entity, 6, 1);
 							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 25);
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 25);
 							projectileLevel.addFreshEntity(_entityToSpawn);
 						}
 					}

@@ -567,7 +567,7 @@
               "value": "CUSTOM:PlunderNBlunderbuss"
             },
             "countOffer": 1,
-            "level": 3,
+            "level": 4,
             "maxTrades": 10,
             "xp": 25,
             "priceMultiplier": 0.05
@@ -622,6 +622,24 @@
             },
             "countOffer": 1,
             "level": 4,
+            "maxTrades": 10,
+            "xp": 25,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 32,
+            "price2": {
+              "value": "Blocks.DEAD_FIRE_CORAL"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:DryoutDisc"
+            },
+            "countOffer": 1,
+            "level": 3,
             "maxTrades": 10,
             "xp": 25,
             "priceMultiplier": 0.05

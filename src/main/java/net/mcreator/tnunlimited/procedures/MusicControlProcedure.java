@@ -10,6 +10,7 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -43,7 +44,7 @@ public class MusicControlProcedure {
 							"stopsound @a music");
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:witherthemeintro music @a[distance=100] ~ ~ ~ 1 1");
+							"playsound tnunlimited:witherthemeintro music @a[distance=0..100] ~ ~ ~ 1 1");
 			} else if (entity.getPersistentData().getDouble("introDuration") <= 220) {
 				entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
 			} else if (entity.getPersistentData().getDouble("loopDuration") == 0) {
@@ -53,7 +54,7 @@ public class MusicControlProcedure {
 							"stopsound @a music");
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:witherthemeloop music @a[distance=100] ~ ~ ~ 1 1");
+							"playsound tnunlimited:witherthemeloop music @a[distance=0..100] ~ ~ ~ 1 1");
 			} else if (entity.getPersistentData().getDouble("loopDuration") <= 2399) {
 				entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
 			} else {
@@ -67,7 +68,7 @@ public class MusicControlProcedure {
 							"stopsound @a music");
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:tdgta-intro music @a[distance=200] ~ ~ ~ 1 1");
+							"playsound tnunlimited:tdgta-intro music @a[distance=0..200] ~ ~ ~ 1 1");
 			} else if (entity.getPersistentData().getDouble("introDuration") <= 320) {
 				entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
 			} else if (entity.getPersistentData().getDouble("loopDuration") == 0) {
@@ -77,7 +78,7 @@ public class MusicControlProcedure {
 							"stopsound @a music");
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:tdgta-loop music @a[distance=200] ~ ~ ~ 1 1");
+							"playsound tnunlimited:tdgta-loop music @a[distance=0..200] ~ ~ ~ 1 1");
 			} else if (entity.getPersistentData().getDouble("loopDuration") <= 1439) {
 				entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
 			} else {
@@ -91,35 +92,52 @@ public class MusicControlProcedure {
 							"stopsound @a music");
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:plunder_n_blunderbuss-loop music @a[distance=50] ~ ~ ~ 1 1");
+							"playsound tnunlimited:plunder_n_blunderbuss-loop music @a[distance=0..50] ~ ~ ~ 1 1");
 			} else if (entity.getPersistentData().getDouble("loopDuration") <= 1446) {
 				entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
 			} else {
 				entity.getPersistentData().putDouble("loopDuration", 0);
 			}
 		} else if (entity instanceof KkoreulEntity) {
-			if (entity.getPersistentData().getDouble("introDuration") == 0) {
-				entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"stopsound @a music");
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:ocean_waste-intro music @a[distance=50] ~ ~ ~ 1 1");
-			} else if (entity.getPersistentData().getDouble("introDuration") <= 60) {
-				entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
-			} else if (entity.getPersistentData().getDouble("loopDuration") == 0) {
-				entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"stopsound @a music");
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"playsound tnunlimited:ocean_waste-loop music @a[distance=50] ~ ~ ~ 1 1");
-			} else if (entity.getPersistentData().getDouble("loopDuration") <= 1800) {
-				entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
+			if (("" + (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)).equals("null")) {
+				if (entity.getPersistentData().getDouble("loopDuration") == 0) {
+					entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"stopsound @a music");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"playsound tnunlimited:dryout music @a[distance=0..50] ~ ~ ~ 1 1");
+				} else if (entity.getPersistentData().getDouble("loopDuration") <= 736) {
+					entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
+				} else {
+					entity.getPersistentData().putDouble("loopDuration", 0);
+				}
 			} else {
-				entity.getPersistentData().putDouble("loopDuration", 0);
+				if (entity.getPersistentData().getDouble("introDuration") == 0) {
+					entity.getPersistentData().putDouble("loopDuration", 0);
+					entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"stopsound @a music");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"playsound tnunlimited:ocean_waste-intro music @a[distance=0..50] ~ ~ ~ 1 1");
+				} else if (entity.getPersistentData().getDouble("introDuration") <= 60) {
+					entity.getPersistentData().putDouble("introDuration", (entity.getPersistentData().getDouble("introDuration") + 1));
+				} else if (entity.getPersistentData().getDouble("loopDuration") == 0) {
+					entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"stopsound @a music");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"playsound tnunlimited:ocean_waste-loop music @a[distance=0..50] ~ ~ ~ 1 1");
+				} else if (entity.getPersistentData().getDouble("loopDuration") <= 1800) {
+					entity.getPersistentData().putDouble("loopDuration", (entity.getPersistentData().getDouble("loopDuration") + 1));
+				} else {
+					entity.getPersistentData().putDouble("loopDuration", 0);
+				}
 			}
 		}
 	}

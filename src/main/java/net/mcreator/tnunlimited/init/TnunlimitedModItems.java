@@ -224,6 +224,7 @@ import net.mcreator.tnunlimited.item.EnchantedScrollOfFortuneItem;
 import net.mcreator.tnunlimited.item.EnchantedScrollOfEfficiencyItem;
 import net.mcreator.tnunlimited.item.EnchantedScrollOfBOAItem;
 import net.mcreator.tnunlimited.item.EnchantedGoldenCactusPetItem;
+import net.mcreator.tnunlimited.item.DryoutDiscItem;
 import net.mcreator.tnunlimited.item.DoneItem;
 import net.mcreator.tnunlimited.item.DoneArmourItem;
 import net.mcreator.tnunlimited.item.DioriteSpearItem;
@@ -788,6 +789,7 @@ public class TnunlimitedModItems {
 	public static final RegistryObject<Item> OVERCHARGED_CLEAVER = REGISTRY.register("overcharged_cleaver", () -> new OverchargedCleaverItem());
 	public static final RegistryObject<Item> KKOREUL_SPAWN_EGG = REGISTRY.register("kkoreul_spawn_egg", () -> new ForgeSpawnEggItem(TnunlimitedModEntities.KKOREUL, -13421773, -6710887, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> OCEAN_WASTE = REGISTRY.register("ocean_waste", () -> new OceanWasteItem());
+	public static final RegistryObject<Item> DRYOUT_DISC = REGISTRY.register("dryout_disc", () -> new DryoutDiscItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

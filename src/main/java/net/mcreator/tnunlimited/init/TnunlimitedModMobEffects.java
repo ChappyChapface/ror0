@@ -20,6 +20,7 @@ import net.mcreator.tnunlimited.potion.NoMilkMobEffect;
 import net.mcreator.tnunlimited.potion.ManaRegenerationMobEffect;
 import net.mcreator.tnunlimited.potion.InstantManaEffectMobEffect;
 import net.mcreator.tnunlimited.potion.InstantDepletingMobEffect;
+import net.mcreator.tnunlimited.potion.InfernoMobEffect;
 import net.mcreator.tnunlimited.potion.HotPotatoEffectMobEffect;
 import net.mcreator.tnunlimited.potion.HelmetLayer2MobEffect;
 import net.mcreator.tnunlimited.potion.HelmetLayer1MobEffect;
@@ -62,4 +63,5 @@ public class TnunlimitedModMobEffects {
 	public static final RegistryObject<MobEffect> CHARGING = REGISTRY.register("charging", () -> new ChargingMobEffect());
 	public static final RegistryObject<MobEffect> DRYOUT = REGISTRY.register("dryout", () -> new DryoutMobEffect());
 	public static final RegistryObject<MobEffect> OVERCHARGED_CLEAVER_DASH_EFFECT = REGISTRY.register("overcharged_cleaver_dash_effect", () -> new OverchargedCleaverDashEffectMobEffect());
+	public static final RegistryObject<MobEffect> INFERNO = REGISTRY.register("inferno", () -> new InfernoMobEffect());
 }

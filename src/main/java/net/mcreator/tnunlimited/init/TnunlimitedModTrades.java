@@ -72,10 +72,11 @@ public class TnunlimitedModTrades {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(Items.GOLD_INGOT, 16), new ItemStack(Items.MUSIC_DISC_PIGSTEP), 10, 25, 0.05f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(Blocks.SUNFLOWER, 8), new ItemStack(TnunlimitedModItems.SUNRISE.get()), 10, 25, 0.05f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16), new ItemStack(TnunlimitedModItems.WITHER_AND_ROT.get()), new ItemStack(TnunlimitedModItems.WITHER_AND_ROT_CHIPTUNE.get()), 10, 25, 0.05f));
-			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Blocks.KELP, 32), new ItemStack(TnunlimitedModItems.PLUNDER_N_BLUNDERBUSS.get()), 10, 25, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Blocks.KELP, 32), new ItemStack(TnunlimitedModItems.PLUNDER_N_BLUNDERBUSS.get()), 10, 25, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Blocks.WITHER_ROSE), new ItemStack(TnunlimitedModItems.WITHER_AND_ROT.get()), 10, 25, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Items.CHORUS_FRUIT, 16), new ItemStack(TnunlimitedModItems.THE_DRAGON_GUARDING_THE_ABYSS.get()), 10, 25, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 64), new ItemStack(Blocks.DEAD_FIRE_CORAL_BLOCK, 4), new ItemStack(TnunlimitedModItems.OCEAN_WASTE.get()), 10, 25, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(Blocks.DEAD_FIRE_CORAL), new ItemStack(TnunlimitedModItems.DRYOUT_DISC.get()), 10, 25, 0.05f));
 		}
 	}
 }

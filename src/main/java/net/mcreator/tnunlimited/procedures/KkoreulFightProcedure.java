@@ -674,7 +674,7 @@ public class KkoreulFightProcedure {
 						((KkoreulEntity) entity).setAnimation("animation.Kkoreul.attack");
 					}
 					TnunlimitedMod.queueServerWork(30, () -> {
-						for (int index0 = 0; index0 < 10; index0++) {
+						for (int index0 = 0; index0 < 15; index0++) {
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 2) {
 								if (world instanceof ServerLevel projectileLevel) {
 									Projectile _entityToSpawn = new Object() {
@@ -688,7 +688,7 @@ public class KkoreulFightProcedure {
 										}
 									}.getArrow(projectileLevel, entity, (float) entity.getPersistentData().getDouble("daMod"), 1);
 									_entityToSpawn.setPos(x, (y + 1.5), z);
-									_entityToSpawn.shoot((entity.getPersistentData().getDouble("tarX") - x), (entity.getPersistentData().getDouble("tarY") - y + 2), (entity.getPersistentData().getDouble("tarZ") - z), 1, 25);
+									_entityToSpawn.shoot((entity.getPersistentData().getDouble("tarX") - x), (entity.getPersistentData().getDouble("tarY") - y + 2), (entity.getPersistentData().getDouble("tarZ") - z), 1, 40);
 									projectileLevel.addFreshEntity(_entityToSpawn);
 								}
 							}
@@ -704,7 +704,7 @@ public class KkoreulFightProcedure {
 									}
 								}.getArrow(projectileLevel, entity, (float) entity.getPersistentData().getDouble("daMod"), 1);
 								_entityToSpawn.setPos(x, (y + 1.5), z);
-								_entityToSpawn.shoot((entity.getPersistentData().getDouble("tarX") - x), (entity.getPersistentData().getDouble("tarY") - y + 1), (entity.getPersistentData().getDouble("tarZ") - z), (float) 1.2, 12);
+								_entityToSpawn.shoot((entity.getPersistentData().getDouble("tarX") - x), (entity.getPersistentData().getDouble("tarY") - y + 1), (entity.getPersistentData().getDouble("tarZ") - z), (float) 1.5, 25);
 								projectileLevel.addFreshEntity(_entityToSpawn);
 							}
 						}

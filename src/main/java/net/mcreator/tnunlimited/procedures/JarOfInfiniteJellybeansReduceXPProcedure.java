@@ -8,7 +8,7 @@ public class JarOfInfiniteJellybeansReduceXPProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) == 0) {
+		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) == 0 && (entity instanceof Player _plr ? _plr.getXpNeededForNextLevel() : 0) == 7) {
 			entity.hurt(DamageSource.STARVE, 5);
 		}
 		if (entity instanceof Player _player)
