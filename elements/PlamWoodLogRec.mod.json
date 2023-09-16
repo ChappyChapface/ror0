@@ -3,25 +3,25 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 3,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:PalmWoodLog"
+      },
+      {
+        "value": "CUSTOM:PalmWoodLog"
       },
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:PalmWoodLog"
       },
       {
         "value": "CUSTOM:PalmWoodLog"
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.PLANKS#2"
+      "value": "CUSTOM:PalmWoodWood"
     },
     "name": "plam_wood_log_rec",
     "namespace": "mod"

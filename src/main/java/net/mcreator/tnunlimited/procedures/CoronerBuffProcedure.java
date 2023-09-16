@@ -9,7 +9,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.tnunlimited.entity.TheDeceasedEntity;
-import net.mcreator.tnunlimited.entity.CoronerEntity;
 
 import java.util.stream.Collectors;
 import java.util.List;
@@ -33,15 +32,6 @@ public class CoronerBuffProcedure {
 		if (buff_number > 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20, (int) Math.min(buff_number, 3)));
-		}
-		if (!((entity instanceof CoronerEntity animatable ? animatable.getTexture() : "null").equals(entity.getPersistentData().getString("variant")))) {
-			if (("pumpkin_coroner").equals(entity.getPersistentData().getString("variant"))) {
-				if (entity instanceof CoronerEntity animatable)
-					animatable.setTexture("pumpkin_coroner");
-			} else if (("coroner").equals(entity.getPersistentData().getString("variant"))) {
-				if (entity instanceof CoronerEntity animatable)
-					animatable.setTexture("coroner");
-			}
 		}
 	}
 }
