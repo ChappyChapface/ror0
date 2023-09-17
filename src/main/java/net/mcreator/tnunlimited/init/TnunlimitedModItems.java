@@ -34,6 +34,7 @@ import net.mcreator.tnunlimited.item.TrainItem;
 import net.mcreator.tnunlimited.item.TorchOfGuidanceItem;
 import net.mcreator.tnunlimited.item.TopHatItem;
 import net.mcreator.tnunlimited.item.TitaniumItem;
+import net.mcreator.tnunlimited.item.TitaniumArmorItem;
 import net.mcreator.tnunlimited.item.TinySelfDetonatorItem;
 import net.mcreator.tnunlimited.item.ThickHorseshoeItem;
 import net.mcreator.tnunlimited.item.TheDragonGuardingTheAbyssItem;
@@ -86,6 +87,7 @@ import net.mcreator.tnunlimited.item.RawtitaniumItem;
 import net.mcreator.tnunlimited.item.RawRoseGoldItem;
 import net.mcreator.tnunlimited.item.RawRithiumItem;
 import net.mcreator.tnunlimited.item.RawLeadItem;
+import net.mcreator.tnunlimited.item.RawFerrotitaniumItem;
 import net.mcreator.tnunlimited.item.RawAntimonyItem;
 import net.mcreator.tnunlimited.item.RawAardiumItem;
 import net.mcreator.tnunlimited.item.ProphetItem;
@@ -808,6 +810,14 @@ public class TnunlimitedModItems {
 	public static final RegistryObject<Item> QUEENS_ALTAR_ACTIVE = block(TnunlimitedModBlocks.QUEENS_ALTAR_ACTIVE, null);
 	public static final RegistryObject<Item> BLOCK_OF_RAW_TITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_RAW_TITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> BLOCK_OF_TITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_TITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BLOCK_OF_RAW_AARDIUM = block(TnunlimitedModBlocks.BLOCK_OF_RAW_AARDIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RAW_FERROTITANIUM = REGISTRY.register("raw_ferrotitanium", () -> new RawFerrotitaniumItem());
+	public static final RegistryObject<Item> BLOCK_OF_RAW_FERROTITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_RAW_FERROTITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BLOCK_OF_FERROTITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_FERROTITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TITANIUM_ARMOR_HELMET = REGISTRY.register("titanium_armor_helmet", () -> new TitaniumArmorItem.Helmet());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_CHESTPLATE = REGISTRY.register("titanium_armor_chestplate", () -> new TitaniumArmorItem.Chestplate());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_LEGGINGS = REGISTRY.register("titanium_armor_leggings", () -> new TitaniumArmorItem.Leggings());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_BOOTS = REGISTRY.register("titanium_armor_boots", () -> new TitaniumArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

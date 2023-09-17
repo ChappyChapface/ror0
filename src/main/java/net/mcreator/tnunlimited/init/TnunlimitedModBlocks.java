@@ -123,8 +123,11 @@ import net.mcreator.tnunlimited.block.BlockOfTitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfRoseGoldBlock;
 import net.mcreator.tnunlimited.block.BlockOfRawTitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfRawRoseGoldBlock;
+import net.mcreator.tnunlimited.block.BlockOfRawFerrotitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfRawAntimonyBlock;
+import net.mcreator.tnunlimited.block.BlockOfRawAardiumBlock;
 import net.mcreator.tnunlimited.block.BlockOfLeadBlock;
+import net.mcreator.tnunlimited.block.BlockOfFerrotitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfAntimonyBlock;
 import net.mcreator.tnunlimited.block.AntimonyOreBlock;
 import net.mcreator.tnunlimited.block.AardiumoreBlock;
@@ -246,6 +249,9 @@ public class TnunlimitedModBlocks {
 	public static final RegistryObject<Block> QUEENS_ALTAR_ACTIVE = REGISTRY.register("queens_altar_active", () -> new QueensAltarActiveBlock());
 	public static final RegistryObject<Block> BLOCK_OF_RAW_TITANIUM = REGISTRY.register("block_of_raw_titanium", () -> new BlockOfRawTitaniumBlock());
 	public static final RegistryObject<Block> BLOCK_OF_TITANIUM = REGISTRY.register("block_of_titanium", () -> new BlockOfTitaniumBlock());
+	public static final RegistryObject<Block> BLOCK_OF_RAW_AARDIUM = REGISTRY.register("block_of_raw_aardium", () -> new BlockOfRawAardiumBlock());
+	public static final RegistryObject<Block> BLOCK_OF_RAW_FERROTITANIUM = REGISTRY.register("block_of_raw_ferrotitanium", () -> new BlockOfRawFerrotitaniumBlock());
+	public static final RegistryObject<Block> BLOCK_OF_FERROTITANIUM = REGISTRY.register("block_of_ferrotitanium", () -> new BlockOfFerrotitaniumBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
