@@ -32,6 +32,8 @@ import net.mcreator.tnunlimited.block.SpawningEyeBlock;
 import net.mcreator.tnunlimited.block.ShroomGrassBlock;
 import net.mcreator.tnunlimited.block.RithiumBlockBlock;
 import net.mcreator.tnunlimited.block.RawRithiumBlockBlock;
+import net.mcreator.tnunlimited.block.QueensAltarBlock;
+import net.mcreator.tnunlimited.block.QueensAltarActiveBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateWallsBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateStairsBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateSlabsBlock;
@@ -104,6 +106,7 @@ import net.mcreator.tnunlimited.block.CobbledDaciteStairsBlock;
 import net.mcreator.tnunlimited.block.CobbledDaciteSlabBlock;
 import net.mcreator.tnunlimited.block.CobbledDaciteBlock;
 import net.mcreator.tnunlimited.block.ChiseledLemonstoneBlock;
+import net.mcreator.tnunlimited.block.ChiseledDaciteBricksBlock;
 import net.mcreator.tnunlimited.block.CattailBlock;
 import net.mcreator.tnunlimited.block.CakesplatterBlock;
 import net.mcreator.tnunlimited.block.BlueShroomslateBlock;
@@ -116,7 +119,9 @@ import net.mcreator.tnunlimited.block.BlueShroomBlockBlock;
 import net.mcreator.tnunlimited.block.BlueLavanderBlock;
 import net.mcreator.tnunlimited.block.BlockofrawleadBlock;
 import net.mcreator.tnunlimited.block.BlockofAardiumBlock;
+import net.mcreator.tnunlimited.block.BlockOfTitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfRoseGoldBlock;
+import net.mcreator.tnunlimited.block.BlockOfRawTitaniumBlock;
 import net.mcreator.tnunlimited.block.BlockOfRawRoseGoldBlock;
 import net.mcreator.tnunlimited.block.BlockOfRawAntimonyBlock;
 import net.mcreator.tnunlimited.block.BlockOfLeadBlock;
@@ -236,6 +241,11 @@ public class TnunlimitedModBlocks {
 	public static final RegistryObject<Block> PALM_FENCE_GATE = REGISTRY.register("palm_fence_gate", () -> new PalmFenceGateBlock());
 	public static final RegistryObject<Block> PALM_DOOR = REGISTRY.register("palm_door", () -> new PalmDoorBlock());
 	public static final RegistryObject<Block> PALM_TRAPDOOR = REGISTRY.register("palm_trapdoor", () -> new PalmTrapdoorBlock());
+	public static final RegistryObject<Block> CHISELED_DACITE_BRICKS = REGISTRY.register("chiseled_dacite_bricks", () -> new ChiseledDaciteBricksBlock());
+	public static final RegistryObject<Block> QUEENS_ALTAR = REGISTRY.register("queens_altar", () -> new QueensAltarBlock());
+	public static final RegistryObject<Block> QUEENS_ALTAR_ACTIVE = REGISTRY.register("queens_altar_active", () -> new QueensAltarActiveBlock());
+	public static final RegistryObject<Block> BLOCK_OF_RAW_TITANIUM = REGISTRY.register("block_of_raw_titanium", () -> new BlockOfRawTitaniumBlock());
+	public static final RegistryObject<Block> BLOCK_OF_TITANIUM = REGISTRY.register("block_of_titanium", () -> new BlockOfTitaniumBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

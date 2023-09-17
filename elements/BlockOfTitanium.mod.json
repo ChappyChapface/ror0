@@ -2,12 +2,12 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "titanium_ore",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "block_of_titanium",
+    "textureTop": "block_of_titanium",
+    "textureLeft": "block_of_titanium",
+    "textureFront": "block_of_titanium",
+    "textureRight": "block_of_titanium",
+    "textureBack": "block_of_titanium",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,9 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Titanium Ore",
+    "name": "Block of Titanium",
     "specialInfo": [],
-    "hardness": 3.5,
+    "hardness": 18.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -54,9 +54,9 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

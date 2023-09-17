@@ -2,12 +2,12 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "titanium_ore",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "block_of_raw_titanium",
+    "textureTop": "block_of_raw_titanium",
+    "textureLeft": "block_of_raw_titanium",
+    "textureFront": "block_of_raw_titanium",
+    "textureRight": "block_of_raw_titanium",
+    "textureBack": "block_of_raw_titanium",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Titanium Ore",
+    "name": "Block of Raw Titanium",
     "specialInfo": [],
-    "hardness": 3.5,
-    "resistance": 10.0,
+    "hardness": 5.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

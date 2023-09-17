@@ -201,6 +201,7 @@ import net.mcreator.tnunlimited.item.GalvanizedClubItem;
 import net.mcreator.tnunlimited.item.GalvanizedAxeItem;
 import net.mcreator.tnunlimited.item.FrostmouthItem;
 import net.mcreator.tnunlimited.item.FrostburnSphereItem;
+import net.mcreator.tnunlimited.item.FrostantCrownItem;
 import net.mcreator.tnunlimited.item.FrostSpikeItem;
 import net.mcreator.tnunlimited.item.FrostPupaeAttackItem;
 import net.mcreator.tnunlimited.item.FrostBulletProjectileItem;
@@ -801,6 +802,12 @@ public class TnunlimitedModItems {
 	public static final RegistryObject<Item> PALM_FENCE_GATE = block(TnunlimitedModBlocks.PALM_FENCE_GATE, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> PALM_DOOR = doubleBlock(TnunlimitedModBlocks.PALM_DOOR, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> PALM_TRAPDOOR = block(TnunlimitedModBlocks.PALM_TRAPDOOR, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> CHISELED_DACITE_BRICKS = block(TnunlimitedModBlocks.CHISELED_DACITE_BRICKS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUEENS_ALTAR = block(TnunlimitedModBlocks.QUEENS_ALTAR, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> FROSTANT_CROWN = REGISTRY.register("frostant_crown", () -> new FrostantCrownItem());
+	public static final RegistryObject<Item> QUEENS_ALTAR_ACTIVE = block(TnunlimitedModBlocks.QUEENS_ALTAR_ACTIVE, null);
+	public static final RegistryObject<Item> BLOCK_OF_RAW_TITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_RAW_TITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BLOCK_OF_TITANIUM = block(TnunlimitedModBlocks.BLOCK_OF_TITANIUM, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
