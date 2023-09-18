@@ -13,23 +13,23 @@
       "value": ""
     },
     "airColor": {
-      "value": -10400596,
+      "value": -14213306,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10400596,
+      "value": -14213306,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -10400596,
+      "value": -14213306,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10400596,
+      "value": -14213306,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -10400596,
+      "value": -14213306,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -52,8 +52,8 @@
     "particlesProbability": 3.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "spawnBiome": true,
-    "spawnInCaves": false,
+    "spawnBiome": false,
+    "spawnInCaves": true,
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -1.0,
@@ -64,16 +64,16 @@
       "max": 1.0
     },
     "genContinentalness": {
-      "min": -0.48,
+      "min": -0.09999999999999999,
       "max": 1.52
     },
     "genErosion": {
-      "min": -0.01,
+      "min": 0.01,
       "max": 0.5
     },
     "genWeirdness": {
-      "min": -1.6499832423127159,
-      "max": 0.35001675768728413
+      "min": -1.65,
+      "max": 0.35
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
@@ -119,20 +119,20 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "EntityVex"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
           "value": "CUSTOM:PurpleBeetle"
         },
         "minGroup": 1,
         "maxGroup": 5,
         "weight": 40,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityVex"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
         "spawnType": "creature"
       }
     ]

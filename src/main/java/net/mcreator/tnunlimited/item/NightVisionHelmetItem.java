@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
@@ -32,7 +33,7 @@ public abstract class NightVisionHelmetItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{0, 0, 0, 1}[slot.getIndex()];
+				return new int[]{0, 0, 0, 2}[slot.getIndex()];
 			}
 
 			@Override
@@ -47,7 +48,7 @@ public abstract class NightVisionHelmetItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
 
 			@Override

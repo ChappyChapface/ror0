@@ -1,7 +1,6 @@
 
 package net.mcreator.tnunlimited.world.features.plants;
 
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -34,7 +33,7 @@ public class BlueShroomRootsFeature extends RandomPatchFeature {
 		FEATURE = new BlueShroomRootsFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:blue_shroom_roots", FEATURE,
 				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.BLUE_SHROOM_ROOTS.get())), List.of(), 150));
-		PLACED_FEATURE = PlacementUtils.register("tnunlimited:blue_shroom_roots", CONFIGURED_FEATURE, List.of(CountPlacement.of(40), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		PLACED_FEATURE = PlacementUtils.register("tnunlimited:blue_shroom_roots", CONFIGURED_FEATURE, List.of(CountPlacement.of(40), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

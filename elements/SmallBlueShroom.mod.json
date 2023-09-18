@@ -6,9 +6,9 @@
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 800000,
-    "minCountPerChunk": 3,
+    "minCountPerChunk": 1,
     "maxCountPerChunk": 4,
-    "spawnLocation": "Ground",
+    "spawnLocation": "Underground",
     "spawnHeightOffset": 0,
     "spawnXOffset": 6,
     "spawnZOffset": 3,
@@ -21,11 +21,17 @@
       },
       {
         "value": "CUSTOM:BlueShroomslate"
+      },
+      {
+        "value": "CUSTOM:PurpleCobbleShroomslate"
       }
     ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:BlueShroomsBiome"
+      },
+      {
+        "value": "dripstone_caves"
       }
     ],
     "ignoreBlocks": "AIR",

@@ -82,7 +82,7 @@ public abstract class NubriumArmourItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "tnunlimited:textures/models/armor/newnubrium__layer_1.png";
+			return "tnunlimited:textures/models/armor/purpnubrium___layer_1.png";
 		}
 
 		@Override
@@ -105,7 +105,7 @@ public abstract class NubriumArmourItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "tnunlimited:textures/models/armor/newnubrium__layer_1.png";
+			return "tnunlimited:textures/models/armor/purpnubrium___layer_1.png";
 		}
 	}
 
@@ -123,7 +123,7 @@ public abstract class NubriumArmourItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "tnunlimited:textures/models/armor/newnubrium__layer_2.png";
+			return "tnunlimited:textures/models/armor/purpnubrium___layer_2.png";
 		}
 	}
 
@@ -141,7 +141,7 @@ public abstract class NubriumArmourItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "tnunlimited:textures/models/armor/newnubrium__layer_1.png";
+			return "tnunlimited:textures/models/armor/purpnubrium___layer_1.png";
 		}
 	}
 }
