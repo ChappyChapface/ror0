@@ -1,27 +1,11 @@
 
 package net.mcreator.tnunlimited.item;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.tnunlimited.procedures.KysSwitchProcedure;
-import net.mcreator.tnunlimited.procedures.KysEntitySwingsItemProcedure;
-import net.mcreator.tnunlimited.procedures.KysEntityHitProcedure;
-
-import java.util.List;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class KysItem extends Item {
+
 	public KysItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.EPIC));
 	}
@@ -64,4 +48,5 @@ public class KysItem extends Item {
 		KysEntitySwingsItemProcedure.execute(entity.level, entity);
 		return retval;
 	}
+
 }

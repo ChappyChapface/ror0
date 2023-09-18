@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.tnunlimited.client.model.Modelwitch_hat;
 import net.mcreator.tnunlimited.client.model.Modelwarcaster;
+import net.mcreator.tnunlimited.client.model.Modeltitanium_armor;
 import net.mcreator.tnunlimited.client.model.Modelsteve;
 import net.mcreator.tnunlimited.client.model.Modelsporcerer;
 import net.mcreator.tnunlimited.client.model.Modelspike_projectile;
@@ -112,6 +113,7 @@ public class TnunlimitedModModels {
 		event.registerLayerDefinition(Modelblood_spheres.LAYER_LOCATION, Modelblood_spheres::createBodyLayer);
 		event.registerLayerDefinition(ModeldioriteChestplate.LAYER_LOCATION, ModeldioriteChestplate::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
+		event.registerLayerDefinition(Modeltitanium_armor.LAYER_LOCATION, Modeltitanium_armor::createBodyLayer);
 		event.registerLayerDefinition(ModelDart.LAYER_LOCATION, ModelDart::createBodyLayer);
 		event.registerLayerDefinition(Modelrose_gold.LAYER_LOCATION, Modelrose_gold::createBodyLayer);
 		event.registerLayerDefinition(Modelender_protector.LAYER_LOCATION, Modelender_protector::createBodyLayer);
