@@ -1,16 +1,34 @@
 
 package net.mcreator.tnunlimited.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.nbt.Tag;
-import net.minecraft.sounds.SoundEvent;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.tnunlimited.procedures.OpenClassGUIProcedure;
+import net.mcreator.tnunlimited.init.TnunlimitedModEntities;
 
 public class BedrockAndyEntity extends PathfinderMob {
-
 	public BedrockAndyEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TnunlimitedModEntities.BEDROCK_ANDY.get(), world);
 	}
@@ -20,9 +38,7 @@ public class BedrockAndyEntity extends PathfinderMob {
 		maxUpStep = 0.6f;
 		xpReward = 0;
 		setNoAi(false);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
@@ -91,9 +107,7 @@ public class BedrockAndyEntity extends PathfinderMob {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-
 		super.mobInteract(sourceentity, hand);
-
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
@@ -118,7 +132,6 @@ public class BedrockAndyEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -128,10 +141,7 @@ public class BedrockAndyEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 98);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 9);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 999);
-
 		return builder;
 	}
-
 }

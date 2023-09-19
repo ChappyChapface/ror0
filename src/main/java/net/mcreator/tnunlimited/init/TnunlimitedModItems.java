@@ -26,6 +26,7 @@ import net.mcreator.tnunlimited.item.WitherAndRotChiptuneItem;
 import net.mcreator.tnunlimited.item.WitchItem;
 import net.mcreator.tnunlimited.item.WeatherClockItem;
 import net.mcreator.tnunlimited.item.WarcasterItem;
+import net.mcreator.tnunlimited.item.VillagerNoseItem;
 import net.mcreator.tnunlimited.item.VambraceItem;
 import net.mcreator.tnunlimited.item.TwoLayerHelmetItem;
 import net.mcreator.tnunlimited.item.TreeBarkItem;
@@ -818,6 +819,10 @@ public class TnunlimitedModItems {
 	public static final RegistryObject<Item> TITANIUM_ARMOR_CHESTPLATE = REGISTRY.register("titanium_armor_chestplate", () -> new TitaniumArmorItem.Chestplate());
 	public static final RegistryObject<Item> TITANIUM_ARMOR_LEGGINGS = REGISTRY.register("titanium_armor_leggings", () -> new TitaniumArmorItem.Leggings());
 	public static final RegistryObject<Item> TITANIUM_ARMOR_BOOTS = REGISTRY.register("titanium_armor_boots", () -> new TitaniumArmorItem.Boots());
+	public static final RegistryObject<Item> PLAM_LEAVES = block(TnunlimitedModBlocks.PLAM_LEAVES, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> WET_SAND = block(TnunlimitedModBlocks.WET_SAND, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> SLOTS = block(TnunlimitedModBlocks.SLOTS, null);
+	public static final RegistryObject<Item> VILLAGER_NOSE_HELMET = REGISTRY.register("villager_nose_helmet", () -> new VillagerNoseItem.Helmet());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

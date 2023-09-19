@@ -45,6 +45,9 @@ import net.mcreator.tnunlimited.world.features.SmallBlueShroomFeature;
 import net.mcreator.tnunlimited.world.features.SinChestStructureFeature;
 import net.mcreator.tnunlimited.world.features.PitFeature;
 import net.mcreator.tnunlimited.world.features.PirateShipFeature;
+import net.mcreator.tnunlimited.world.features.PalmTreeSmallFeature;
+import net.mcreator.tnunlimited.world.features.PalmTreeMedFeature;
+import net.mcreator.tnunlimited.world.features.PalmTreeLargeFeature;
 import net.mcreator.tnunlimited.world.features.PalmTree2Feature;
 import net.mcreator.tnunlimited.world.features.PalmTree1Feature;
 import net.mcreator.tnunlimited.world.features.NetherTowerLimitedFeature;
@@ -104,4 +107,7 @@ public class TnunlimitedModFeatures {
 	public static final RegistryObject<Feature<?>> CATTAIL = REGISTRY.register("cattail", CattailFeature::feature);
 	public static final RegistryObject<Feature<?>> BLUE_LAVANDER = REGISTRY.register("blue_lavander", BlueLavanderFeature::feature);
 	public static final RegistryObject<Feature<?>> PURPLE_COBBLE_SHROOMSLATE = REGISTRY.register("purple_cobble_shroomslate", PurpleCobbleShroomslateFeature::feature);
+	public static final RegistryObject<Feature<?>> PALM_TREE_SMALL = REGISTRY.register("palm_tree_small", PalmTreeSmallFeature::feature);
+	public static final RegistryObject<Feature<?>> PALM_TREE_MED = REGISTRY.register("palm_tree_med", PalmTreeMedFeature::feature);
+	public static final RegistryObject<Feature<?>> PALM_TREE_LARGE = REGISTRY.register("palm_tree_large", PalmTreeLargeFeature::feature);
 }
