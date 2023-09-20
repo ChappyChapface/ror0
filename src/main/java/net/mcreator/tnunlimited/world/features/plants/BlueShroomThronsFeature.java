@@ -32,7 +32,7 @@ public class BlueShroomThronsFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new BlueShroomThronsFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:blue_shroom_throns", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.BLUE_SHROOM_THRONS.get())), List.of(), 80));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.BLUE_SHROOM_THRONS.get())), List.of(), 250));
 		PLACED_FEATURE = PlacementUtils.register("tnunlimited:blue_shroom_throns", CONFIGURED_FEATURE, List.of(CountPlacement.of(40), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
 		return FEATURE;
 	}

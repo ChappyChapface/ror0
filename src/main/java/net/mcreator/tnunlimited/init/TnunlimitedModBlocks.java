@@ -36,6 +36,9 @@ import net.mcreator.tnunlimited.block.RithiumBlockBlock;
 import net.mcreator.tnunlimited.block.RawRithiumBlockBlock;
 import net.mcreator.tnunlimited.block.QueensAltarBlock;
 import net.mcreator.tnunlimited.block.QueensAltarActiveBlock;
+import net.mcreator.tnunlimited.block.PurpleSlimeWallBlock;
+import net.mcreator.tnunlimited.block.PurpleSlimeBlockBlock;
+import net.mcreator.tnunlimited.block.PurpleSlimeBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateWallsBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateStairsBlock;
 import net.mcreator.tnunlimited.block.PurpleShroomslateSlabsBlock;
@@ -258,6 +261,9 @@ public class TnunlimitedModBlocks {
 	public static final RegistryObject<Block> PLAM_LEAVES = REGISTRY.register("plam_leaves", () -> new PlamLeavesBlock());
 	public static final RegistryObject<Block> WET_SAND = REGISTRY.register("wet_sand", () -> new WetSandBlock());
 	public static final RegistryObject<Block> SLOTS = REGISTRY.register("slots", () -> new SlotsBlock());
+	public static final RegistryObject<Block> PURPLE_SLIME = REGISTRY.register("purple_slime", () -> new PurpleSlimeBlock());
+	public static final RegistryObject<Block> PURPLE_SLIME_WALL = REGISTRY.register("purple_slime_wall", () -> new PurpleSlimeWallBlock());
+	public static final RegistryObject<Block> PURPLE_SLIME_BLOCK = REGISTRY.register("purple_slime_block", () -> new PurpleSlimeBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

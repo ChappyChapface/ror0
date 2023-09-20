@@ -37,7 +37,7 @@
     },
     "hardness": 0.0,
     "resistance": 0.0,
-    "luminance": 7,
+    "luminance": 6,
     "unbreakable": false,
     "isSolid": false,
     "isCustomSoundType": false,
@@ -102,7 +102,7 @@
         "value": "CUSTOM:BlueShroomsBiome"
       }
     ],
-    "patchSize": 80,
+    "patchSize": 50,
     "generateAtAnyHeight": true
   }
 }

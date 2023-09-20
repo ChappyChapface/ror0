@@ -23913,6 +23913,240 @@
           }
         ]
       }
+    },
+    {
+      "name": "PurpleSlime",
+      "type": "block",
+      "sortid": 1362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/block/PurpleSlimeBlock.java",
+          "src/main/resources/assets/tnunlimited/blockstates/purple_slime.json",
+          "src/main/resources/assets/tnunlimited/models/item/purple_slime.json",
+          "src/main/resources/assets/tnunlimited/models/block/purple_slime.json"
+        ]
+      }
+    },
+    {
+      "name": "StickyPurpleSlime",
+      "type": "item",
+      "sortid": 1364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky_purple_slime",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/sticky_purple_slime.json",
+          "src/main/java/net/mcreator/tnunlimited/item/StickyPurpleSlimeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 1365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/PurpleSlimeNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PurpleSlimeUpdateTick",
+      "type": "procedure",
+      "sortid": 1366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/PurpleSlimeUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeWall",
+      "type": "block",
+      "sortid": 1367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/purple_slime_wall.json",
+          "src/main/java/net/mcreator/tnunlimited/block/PurpleSlimeWallBlock.java",
+          "src/main/resources/assets/tnunlimited/blockstates/purple_slime_wall.json",
+          "src/main/resources/assets/tnunlimited/models/block/purple_slime_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeWallNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 1368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_wall_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/PurpleSlimeWallNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StickyPurpleSlimeRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 1369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky_purple_slime_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/StickyPurpleSlimeRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeBlock",
+      "type": "block",
+      "sortid": 1370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/block/PurpleSlimeBlockBlock.java",
+          "src/main/resources/data/tnunlimited/forge/biome_modifier/purple_slime_block_biome_modifier.json",
+          "src/main/resources/assets/tnunlimited/models/block/purple_slime_block.json",
+          "src/main/resources/assets/tnunlimited/models/item/purple_slime_block.json",
+          "src/main/java/net/mcreator/tnunlimited/world/features/ores/PurpleSlimeBlockFeature.java",
+          "src/main/resources/assets/tnunlimited/blockstates/purple_slime_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeBlockRecipe",
+      "type": "recipe",
+      "sortid": 1371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tnunlimited/recipes/purple_slime_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StickyOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 1372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/StickyOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Sticky",
+      "type": "potioneffect",
+      "sortid": 1373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/potion/StickyMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpleSlimeBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 1374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_slime_block_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/PurpleSlimeBlockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -24883,6 +25117,7 @@
       "item.tnunlimited.aardiumpickaxe": "Aardium pickaxe",
       "entity.tnunlimited.spawn_structure_e": "Spawn Structure E",
       "advancements.all_sins.title": "7 Sins",
+      "block.tnunlimited.purple_slime_wall": "Sticky Purple Slime",
       "enchantment.tnunlimited.leeching": "Leeching",
       "item.tnunlimited.desert_roach_armor_leggings": "Desert Roach Leggings",
       "entity.tnunlimited.zombie": "Bernie The Zombie",
@@ -24912,6 +25147,7 @@
       "item.tnunlimited.blue_berry": "Blue Berry",
       "effect.tnunlimited.frostburn": "Frostburn",
       "entity.tnunlimited.kkoreul_minion": "Kkoreul Minion",
+      "block.tnunlimited.purple_slime_block": "Sticky Purple Slime Block",
       "item.tnunlimited.antimony_armor_armor_chestplate": "Antimony Chestplate",
       "block.tnunlimited.cobbled_dacite_wall": "Cobbled Dacite Wall",
       "block.tnunlimited.block_of_raw_ferrotitanium": "Block of Raw Ferrotitanium",
@@ -25081,6 +25317,7 @@
       "item.tnunlimited.lead_shovel": "Lead Shovel",
       "advancements.blood_for_the_blood_god.title": "Blood for the Blood God",
       "item.minecraft.lingering_potion.effect.depleting_plus": "Lingering Potion of Depleting",
+      "effect.tnunlimited.sticky": "Sticky",
       "block.tnunlimited.nubrium_block": "Block of Nubrium",
       "block.tnunlimited.plush_stoatman": "Plush Stoatman",
       "gamerule.purgatoryMode": "Purgatory Mode",
@@ -25173,6 +25410,7 @@
       "item.tnunlimited.band_of_beatdown": "Band Of Beatdown",
       "item.tnunlimited.heatwave": "Heatwave",
       "advancements.happy_birthday.title": "Happy Birthday!",
+      "block.tnunlimited.purple_slime": "Sticky Purple Slime",
       "item.tnunlimited.soulofadrenaline": "Soul of Adrenaline",
       "item.minecraft.potion.effect.bludgeoning_ii": "Potion of Bludgeoning",
       "item.tnunlimited.sunrise": "Music Disc",
@@ -25225,6 +25463,7 @@
       "item.tnunlimited.something_leggings": "Something Leggings",
       "item.tnunlimited.vambrace": "Vambrace",
       "item.tnunlimited.iron_band": "Iron Band",
+      "item.tnunlimited.sticky_purple_slime": "Sticky Purple Slime",
       "item.tnunlimited.top_hat_helmet": "Top Hat Helmet",
       "item.tnunlimited.titanium": "Titanium Ingot",
       "effect.tnunlimited.instant_depleting": "Instant Depletion",

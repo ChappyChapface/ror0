@@ -26,6 +26,7 @@ import net.mcreator.tnunlimited.world.features.ores.TitaniumoreFeature;
 import net.mcreator.tnunlimited.world.features.ores.SupergraniteFeature;
 import net.mcreator.tnunlimited.world.features.ores.StrawberryBushstage4Feature;
 import net.mcreator.tnunlimited.world.features.ores.StrawberryBushstage0Feature;
+import net.mcreator.tnunlimited.world.features.ores.PurpleSlimeBlockFeature;
 import net.mcreator.tnunlimited.world.features.ores.PurpleCobbleShroomslateFeature;
 import net.mcreator.tnunlimited.world.features.ores.NubriumOreFeature;
 import net.mcreator.tnunlimited.world.features.ores.NetherRithiumOreFeature;
@@ -110,4 +111,5 @@ public class TnunlimitedModFeatures {
 	public static final RegistryObject<Feature<?>> PALM_TREE_SMALL = REGISTRY.register("palm_tree_small", PalmTreeSmallFeature::feature);
 	public static final RegistryObject<Feature<?>> PALM_TREE_MED = REGISTRY.register("palm_tree_med", PalmTreeMedFeature::feature);
 	public static final RegistryObject<Feature<?>> PALM_TREE_LARGE = REGISTRY.register("palm_tree_large", PalmTreeLargeFeature::feature);
+	public static final RegistryObject<Feature<?>> PURPLE_SLIME_BLOCK = REGISTRY.register("purple_slime_block", PurpleSlimeBlockFeature::feature);
 }

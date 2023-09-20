@@ -1,0 +1,9 @@
+{
+  "parent": "tnunlimited:custom/purpleslimemodelwall",
+  "textures": {
+    "all": "tnunlimited:blocks/purpleslimemodeltexture",
+    "particle": "tnunlimited:blocks/purpleslimemodeltexture",
+    "0": "tnunlimited:blocks/purplerealblock"
+  },
+  "render_type": "translucent"
+}

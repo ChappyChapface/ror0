@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.tnunlimited.potion.SturdyMobEffect;
+import net.mcreator.tnunlimited.potion.StickyMobEffect;
 import net.mcreator.tnunlimited.potion.ShatteredPrideMobEffect;
 import net.mcreator.tnunlimited.potion.PrideCrownEffectMobEffect;
 import net.mcreator.tnunlimited.potion.ParasiteMobEffect;
@@ -64,4 +65,5 @@ public class TnunlimitedModMobEffects {
 	public static final RegistryObject<MobEffect> DRYOUT = REGISTRY.register("dryout", () -> new DryoutMobEffect());
 	public static final RegistryObject<MobEffect> OVERCHARGED_CLEAVER_DASH_EFFECT = REGISTRY.register("overcharged_cleaver_dash_effect", () -> new OverchargedCleaverDashEffectMobEffect());
 	public static final RegistryObject<MobEffect> INFERNO = REGISTRY.register("inferno", () -> new InfernoMobEffect());
+	public static final RegistryObject<MobEffect> STICKY = REGISTRY.register("sticky", () -> new StickyMobEffect());
 }

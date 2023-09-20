@@ -44,6 +44,7 @@ import net.mcreator.tnunlimited.item.SuperSpeedBootsItem;
 import net.mcreator.tnunlimited.item.SunriseItem;
 import net.mcreator.tnunlimited.item.StrawberryFoodItem;
 import net.mcreator.tnunlimited.item.StoneSickleItem;
+import net.mcreator.tnunlimited.item.StickyPurpleSlimeItem;
 import net.mcreator.tnunlimited.item.StaffOfTheBloodgodItem;
 import net.mcreator.tnunlimited.item.SporcererItem;
 import net.mcreator.tnunlimited.item.SpikedCollarItem;
@@ -823,6 +824,10 @@ public class TnunlimitedModItems {
 	public static final RegistryObject<Item> WET_SAND = block(TnunlimitedModBlocks.WET_SAND, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> SLOTS = block(TnunlimitedModBlocks.SLOTS, null);
 	public static final RegistryObject<Item> VILLAGER_NOSE_HELMET = REGISTRY.register("villager_nose_helmet", () -> new VillagerNoseItem.Helmet());
+	public static final RegistryObject<Item> PURPLE_SLIME = block(TnunlimitedModBlocks.PURPLE_SLIME, null);
+	public static final RegistryObject<Item> STICKY_PURPLE_SLIME = REGISTRY.register("sticky_purple_slime", () -> new StickyPurpleSlimeItem());
+	public static final RegistryObject<Item> PURPLE_SLIME_WALL = block(TnunlimitedModBlocks.PURPLE_SLIME_WALL, null);
+	public static final RegistryObject<Item> PURPLE_SLIME_BLOCK = block(TnunlimitedModBlocks.PURPLE_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

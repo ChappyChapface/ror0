@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tnunlimited:blocks/purpleblocktexture",
+    "up": "tnunlimited:blocks/purpleblocktexture",
+    "north": "tnunlimited:blocks/purpleblocktexture",
+    "east": "tnunlimited:blocks/purpleblocktexture",
+    "south": "tnunlimited:blocks/purpleblocktexture",
+    "west": "tnunlimited:blocks/purpleblocktexture",
+    "particle": "tnunlimited:blocks/purpleblocktexture"
+  },
+  "render_type": "translucent"
+}

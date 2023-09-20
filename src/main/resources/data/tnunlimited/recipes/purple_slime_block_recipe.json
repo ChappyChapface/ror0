@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "tnunlimited:sticky_purple_slime"
+    },
+    "1": {
+      "item": "tnunlimited:sticky_purple_slime"
+    },
+    "2": {
+      "item": "tnunlimited:sticky_purple_slime"
+    },
+    "3": {
+      "item": "tnunlimited:sticky_purple_slime"
+    }
+  },
+  "result": {
+    "item": "tnunlimited:purple_slime_block",
+    "count": 1
+  }
+}

@@ -108,7 +108,7 @@
         "value": "CUSTOM:BlueShroomsBiome"
       }
     ],
-    "patchSize": 80,
+    "patchSize": 75,
     "generateAtAnyHeight": true
   }
 }

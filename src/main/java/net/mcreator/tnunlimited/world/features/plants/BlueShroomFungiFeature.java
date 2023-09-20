@@ -32,7 +32,7 @@ public class BlueShroomFungiFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new BlueShroomFungiFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("tnunlimited:blue_shroom_fungi", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.BLUE_SHROOM_FUNGI.get())), List.of(), 80));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(TnunlimitedModBlocks.BLUE_SHROOM_FUNGI.get())), List.of(), 75));
 		PLACED_FEATURE = PlacementUtils.register("tnunlimited:blue_shroom_fungi", CONFIGURED_FEATURE, List.of(CountPlacement.of(20), InSquarePlacement.spread(), PlacementUtils.FULL_RANGE, BiomeFilter.biome()));
 		return FEATURE;
 	}
