@@ -1,11 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "dark_forest",
   "spawners": {
     "type": "tnunlimited:coroner",
-    "weight": 8,
+    "weight": 14,
     "minCount": 1,
     "maxCount": 1
   }

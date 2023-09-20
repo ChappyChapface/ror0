@@ -9352,6 +9352,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -23660,6 +23676,374 @@
           "src/main/resources/data/tnunlimited/loot_tables/entities/frost_ant.json"
         ]
       }
+    },
+    {
+      "name": "TitaniumMace",
+      "type": "tool",
+      "sortid": 1352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/titanium_mace.json",
+          "src/main/java/net/mcreator/tnunlimited/item/TitaniumMaceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TitaniumMaceRe",
+      "type": "recipe",
+      "sortid": 1353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_mace_re",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tnunlimited/recipes/titanium_mace_re.json"
+        ]
+      }
+    },
+    {
+      "name": "Daywalker",
+      "type": "armor",
+      "sortid": 1354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daywalker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/daywalker_boots.json",
+          "src/main/resources/assets/tnunlimited/models/item/daywalker_leggings.json",
+          "src/main/resources/assets/tnunlimited/models/item/daywalker_chestplate.json",
+          "src/main/resources/assets/tnunlimited/models/item/daywalker_helmet.json",
+          "src/main/java/net/mcreator/tnunlimited/item/DaywalkerItem.java"
+        ],
+        "eh": true,
+        "eb": true,
+        "ec": true,
+        "el": true
+      }
+    },
+    {
+      "name": "DaywalkerSparklez",
+      "type": "particle",
+      "sortid": 1355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daywalker_sparklez",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/particles/daywalker_sparklez.json",
+          "src/main/java/net/mcreator/tnunlimited/client/particle/DaywalkerSparklezParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "DivineCodex",
+      "type": "tool",
+      "sortid": 1357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_codex",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/divine_codex.json",
+          "src/main/java/net/mcreator/tnunlimited/item/DivineCodexItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DivineCodexShoot",
+      "type": "procedure",
+      "sortid": 1356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_codex_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/DivineCodexShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DivineCodexP",
+      "type": "rangeditem",
+      "sortid": 1359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_codex_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/item/DivineCodexPItem.java",
+          "src/main/java/net/mcreator/tnunlimited/entity/DivineCodexPEntity.java",
+          "src/main/resources/assets/tnunlimited/models/item/divine_codex_p.json"
+        ]
+      }
+    },
+    {
+      "name": "DivineCodexFly",
+      "type": "procedure",
+      "sortid": 1358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_codex_fly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/DivineCodexFlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DivineCodexPProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 1360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_codex_p_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/DivineCodexPProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IchorHeartCharm",
+      "type": "item",
+      "sortid": 1361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ichor_heart_charm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/item/IchorHeartCharmItem.java",
+          "src/main/resources/assets/tnunlimited/models/item/ichor_heart_charm.json"
+        ]
+      }
+    },
+    {
+      "name": "IchorHeartCharmUse",
+      "type": "procedure",
+      "sortid": 1362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ichor_heart_charm_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/IchorHeartCharmUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ichor",
+      "type": "item",
+      "sortid": 1363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ichor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/item/IchorItem.java",
+          "src/main/resources/assets/tnunlimited/models/item/ichor.json"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jotunnheart",
+      "type": "item",
+      "sortid": 1364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jotunnheart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/item/JotunnheartItem.java",
+          "src/main/resources/assets/tnunlimited/models/item/jotunnheart.json"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HemolymphHeartCharm",
+      "type": "item",
+      "sortid": 1365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemolymph_heart_charm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tnunlimited/models/item/hemolymph_heart_charm.json",
+          "src/main/java/net/mcreator/tnunlimited/item/HemolymphHeartCharmItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HemolymphHeartCharmUse",
+      "type": "procedure",
+      "sortid": 1366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemolymph_heart_charm_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/tnunlimited/procedures/HemolymphHeartCharmUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HemolymphHeartRecipe",
+      "type": "recipe",
+      "sortid": 1367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemolymph_heart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tnunlimited/recipes/hemolymph_heart_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IchorHeartRecipe",
+      "type": "recipe",
+      "sortid": 1368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ichor_heart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tnunlimited/recipes/ichor_heart_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -24295,8 +24679,8 @@
       "item.tnunlimited.kkoreul_bullet": "Kkoreul Bullet",
       "item.minecraft.tipped_arrow.effect.potion_of_flurry_plus": "Arrow of Flurry",
       "gui.tnunlimited.nitro_charge.label_varintegerenergybladecharge": "\u003cVAR:integer:energybladecharge\u003e",
-      "item.tnunlimited.jar_of_infinite_jellybeans": "Jar of Infinite Jellybeans",
       "item.tnunlimited.shieldring": "Shield Ring",
+      "item.tnunlimited.jar_of_infinite_jellybeans": "Jar of Infinite Jellybeans",
       "item.tnunlimited.buckler": "Buckler",
       "advancements.pepperonis_will_slay_you_for_this_advancement.title": "True Pepperoni Fashion",
       "item.tnunlimited.cakeblobammo": "Cakeblobammo",
@@ -24321,20 +24705,20 @@
       "subtitles.coroner_idle": "Coroner Idle",
       "item.tnunlimited.titanium_armor_helmet": "Titanium Helmet",
       "item.tnunlimited.kkoreul_spawn_egg": "Kkoreul Spawn Egg",
-      "item.tnunlimited.amethyst_fireball": "Amethyst Fireball",
       "effect.tnunlimited.overcharged_cleaver_dash_effect": "Dash Timer",
+      "item.tnunlimited.amethyst_fireball": "Amethyst Fireball",
       "item.tnunlimited.netherite_wand": "Netherite Wand",
       "item.tnunlimited.pearl": "Pearl",
       "item.tnunlimited.aarduimsword": "Aardium sword",
-      "item.tnunlimited.soulfire_spike": "Soulfire Spike",
       "advancements.kkoreul_advancement.title": "Scourge of the Reef",
+      "item.tnunlimited.soulfire_spike": "Soulfire Spike",
       "subtitles.treebark": "Deadly_Golem - Tree Bark",
       "block.tnunlimited.palm_door": "Palm Door",
       "subtitles.plunder_n_blunderbuss-loop": "",
       "item.tnunlimited.fancy_pants_leggings": "Fancy Pants",
       "item.tnunlimited.knife_saber": "Knife Saber",
-      "effect.tnunlimited.pride_crown_effect": "Pride",
       "item.tnunlimited.rawtitanium": "Raw Titanium",
+      "effect.tnunlimited.pride_crown_effect": "Pride",
       "item.tnunlimited.hot_potato": "Hot Potato",
       "item.tnunlimited.pirate_helmet": "Pirate Bandanna",
       "subtitles.blunderbuss_reload": "Blunderbuss Reloading",
@@ -24348,11 +24732,12 @@
       "item.tnunlimited.red_pepper": "Red Pepper",
       "advancements.blood_for_the_blood_god.descr": "Obtain \u0027Staff of the Blood God\u0027",
       "block.tnunlimited.blockofrawlead": "Block of Raw Lead",
+      "item.tnunlimited.titanium_mace": "Titanium Mace",
       "item.minecraft.lingering_potion.effect.potion_of_flurry_plus": "Lingering Potion of Flurry",
-      "item.tnunlimited.nitroblade": "Nitro Blade",
       "gui.tnunlimited.accessories.button_equip": "EQUIP",
-      "advancements.mocha_advancement.title": "The Ultimate Brew!!",
+      "item.tnunlimited.nitroblade": "Nitro Blade",
       "entity.tnunlimited.frost_ant": "Frost Ant",
+      "advancements.mocha_advancement.title": "The Ultimate Brew!!",
       "item.tnunlimited.raw_ferrotitanium": "Raw Ferrotitanium",
       "item.tnunlimited.pinacate_beetle_spawn_egg": "Pinacate Beetle Spawn Egg",
       "item.tnunlimited.glass_skull_helmet": "Glass Skull",
@@ -24379,8 +24764,8 @@
       "block.tnunlimited.supergranite": "Crystaline Energy",
       "item.tnunlimited.iron_club": "Iron Club",
       "block.tnunlimited.stripped_palm_wood_block": "Stripped Palm Wood",
-      "item.tnunlimited.flintlock": "Flintlock",
       "item.minecraft.potion.effect.potion_of_flurry": "Potion of Flurry",
+      "item.tnunlimited.flintlock": "Flintlock",
       "item.minecraft.lingering_potion.effect.frostburn_potion": "Lingering Potion of Frostburn",
       "item.tnunlimited.primal_chestplate": "Primal Top",
       "gui.tnunlimited.starter_class.label_starter_class": "Select Class",
@@ -24393,8 +24778,8 @@
       "enchantment.tnunlimited.aerial_movement": "Aerial Movement",
       "key.tnunlimited.open_accessory_menu": "Open Accessory Menu",
       "item.tnunlimited.ocean_waste": "Music Disc",
-      "enchantment.tnunlimited.harvesting": "Harvesting",
       "item.minecraft.splash_potion.effect.potion_of_sturdy_ii": "Splash Potion of Sturdy",
+      "enchantment.tnunlimited.harvesting": "Harvesting",
       "item.tnunlimited.galvanized_club": "Galvanized Club",
       "item.tnunlimited.wooden_sickle": "Wooden Sickle",
       "item.minecraft.lingering_potion.effect.replenishment_ii": "Lingering Potion of Replenishment",
@@ -24409,9 +24794,10 @@
       "item.tnunlimited.wraths_death_cry": "Wrath\u0027s Death Cry",
       "item.tnunlimited.frost_bullet_projectile": "Bullet Projectile",
       "item.tnunlimited.iceball": "Iceball",
+      "item.tnunlimited.divine_codex": "Divine Codex",
       "item.tnunlimited.pirate_captain_spawn_egg": "Pirate Captain Spawn Egg",
-      "item.tnunlimited.witch_leggings": "Witch Leggings",
       "effect.tnunlimited.paranoia": "Paranoia",
+      "item.tnunlimited.witch_leggings": "Witch Leggings",
       "gui.tnunlimited.stat_sheet.label_kbr": "KBR:",
       "item.minecraft.potion.effect.replenishment_plus": "Potion of Replenishment",
       "gui.tnunlimited.overdrive_table_ui.button_overdrive": "OVERDRIVE",
@@ -24438,15 +24824,16 @@
       "item.tnunlimited.dark_warhammer": "Dark Warhammer",
       "item.tnunlimited.torch_of_guidance": "Torch of Guidance",
       "block.tnunlimited.blockof_aardium": "Block of Aardium",
-      "item.minecraft.tipped_arrow.effect.frostburn_potion": "Arrow of Frostburn",
       "item.tnunlimited.pepperoni_ingot": "Pepperoni Ingot",
+      "item.minecraft.tipped_arrow.effect.frostburn_potion": "Arrow of Frostburn",
       "death.attack.parasite.player": "%1$s tasted great",
+      "item.tnunlimited.daywalker_chestplate": "Daywalker Chestplate",
       "item.tnunlimited.frostburn_sphere": "Frostburn Sphere",
       "gamerule.milkNerf.description": "Milk can no longer be used if you have a negative potion effect.",
       "gamerule.doSpecialSpawning": "Special Spawning",
       "item.tnunlimited.hellfire": "Amethyst Fireball",
-      "gui.tnunlimited.stat_sheet.label_fam_spd": "FAM SPD:",
       "entity.tnunlimited.frost_ant_queen": "Frost Ant Queen",
+      "gui.tnunlimited.stat_sheet.label_fam_spd": "FAM SPD:",
       "item.tnunlimited.golden_crown_helmet": "Golden Crown",
       "item.tnunlimited.nubrium_sickle": "Nubrium Sickle",
       "item.tnunlimited.lead_club": "Lead Club",
@@ -24458,8 +24845,8 @@
       "block.tnunlimited.cakesplatter": "Cakesplatter",
       "item.tnunlimited.sword_saber": "Sword Saber",
       "item.tnunlimited.sunrise.desc": "Pokeplaza - Sunrise",
-      "item.minecraft.tipped_arrow.effect.potion_of_flurry_ii": "Arrow of Flurry",
       "block.tnunlimited.palm_fence_gate": "Palm Fence Gate",
+      "item.minecraft.tipped_arrow.effect.potion_of_flurry_ii": "Arrow of Flurry",
       "item.tnunlimited.frostmouth": "The Frostmouth",
       "advancements.matching_outfit.title": "Matching Outfit",
       "block.tnunlimited.plush_glowing_golem": "Plush Glowing Golem",
@@ -24470,8 +24857,8 @@
       "item.tnunlimited.birthday_block_boy_helmet": "Birthday Block Boy",
       "item.tnunlimited.the_dragon_guarding_the_abyss.desc": "Pokeplaza - The Dragon Guarding the Abyss",
       "item.tnunlimited.witch_boots": "Witch Boots",
-      "effect.tnunlimited.gilded_bug_buff": "Gilded Bug",
       "block.tnunlimited.tangelo_blossom": "Tangelo Blossom",
+      "effect.tnunlimited.gilded_bug_buff": "Gilded Bug",
       "entity.tnunlimited.wastelandish_hopper": "Wastelandish Hopper",
       "item.tnunlimited.diorite_leggings": "Diorite Leggings",
       "block.tnunlimited.blue_shroomslate": "Purple Shroomslate",
@@ -24496,8 +24883,8 @@
       "item.minecraft.potion.effect.instant_depletion": "Potion of Instant Depletion",
       "gui.tnunlimited.spawning_eye_gui.button_feed": "Feed",
       "advancements.tank_unlock.descr": "Take 250 total damage",
-      "block.tnunlimited.chiseled_dacite_bricks": "Chiseled Dacite Bricks",
       "item.tnunlimited.slime_armour_helmet": "Slime Helmet",
+      "block.tnunlimited.chiseled_dacite_bricks": "Chiseled Dacite Bricks",
       "effect.tnunlimited.sturdy": "Sturdy",
       "item.tnunlimited.dryout_disc": "Music Disc",
       "item.tnunlimited.aardiumingo_axe": "Aardium Axe",
@@ -24524,12 +24911,12 @@
       "item.tnunlimited.aardium_needle": "Aardium Needle",
       "gui.tnunlimited.stat_sheet.label_varmovementspeedincrease": "\u003cVAR:movementSpeedIncrease\u003e",
       "item.tnunlimited.frost_ant_queen_phase_2_spawn_egg": "Frost Ant Queen Spawn Egg",
-      "gui.tnunlimited.mana_bar.label_varintegermana": "\u003cVAR:integer:mana\u003e",
       "item.tnunlimited.desert_chitin": "Desert Chitin",
+      "gui.tnunlimited.mana_bar.label_varintegermana": "\u003cVAR:integer:mana\u003e",
       "entity.tnunlimited.dune_spider": "Dune Spider",
       "gamerule.purgatoryMode.description": "Greatly increased diffiuclty. Increased loot.",
-      "item.tnunlimited.desert_ingot": "Desert Ingot",
       "item.tnunlimited.lead_bullet": "Lead Bullet",
+      "item.tnunlimited.desert_ingot": "Desert Ingot",
       "item.tnunlimited.wither_and_rot": "Music Disc",
       "block.tnunlimited.zinc_block": "Block of Zinc",
       "block.tnunlimited.dacite_bricks_wall": "Dacite Bricks Wall",
@@ -24602,6 +24989,7 @@
       "item.tnunlimited.bomeen_club": "Bomeen Club",
       "item.tnunlimited.hotchocolate": "Hot Chocolate",
       "item.tnunlimited.iron_sickle": "Iron Sickle",
+      "item.tnunlimited.ichor_heart_charm": "Ichor Heart Charm",
       "entity.tnunlimited.frost_ant_worker": "Frost Ant Worker",
       "item.tnunlimited.coroner_spawn_egg": "Coroner Spawn Egg",
       "item.tnunlimited.done_armour_leggings": "Bomeen Leggings",
@@ -24662,6 +25050,7 @@
       "block.tnunlimited.block_of_raw_ferrotitanium": "Block of Raw Ferrotitanium",
       "item.tnunlimited.antimony_tools_pickaxe": "Antimony Pickaxe",
       "item.tnunlimited.rithium_axe": "Rithium Axe",
+      "item.tnunlimited.hemolymph_heart_charm": "Hemolymph Heart Charm",
       "subtitles.the_dragon_guarding_the_abyss": "The Dragon Guarding the Abyss - pokeplaza",
       "effect.tnunlimited.instant_mana_effect": "Instant Mana",
       "item.tnunlimited.the_dragon_guarding_the_abyss": "Music Disc",
@@ -24788,6 +25177,7 @@
       "effect.tnunlimited.bleeding": "Bleeding",
       "gui.tnunlimited.stat_sheet.label_armor": "ARMOR:",
       "item.tnunlimited.aardium_sickle": "Aardium Sickle",
+      "item.tnunlimited.daywalker_leggings": "Daywalker Leggings",
       "item.tnunlimited.plum": "Plum",
       "item.tnunlimited.blunderbuss": "Blunderbuss",
       "item.minecraft.lingering_potion.effect.bludgeoning_ii": "Lingering Potion of Bludgeoning",
@@ -24827,6 +25217,7 @@
       "advancements.blood_for_the_blood_god.title": "Blood for the Blood God",
       "item.minecraft.lingering_potion.effect.depleting_plus": "Lingering Potion of Depleting",
       "block.tnunlimited.nubrium_block": "Block of Nubrium",
+      "item.tnunlimited.ichor": "Ichor",
       "block.tnunlimited.plush_stoatman": "Plush Stoatman",
       "gamerule.purgatoryMode": "Purgatory Mode",
       "item.minecraft.splash_potion.effect.bludgeoning_plus": "Splash Potion of Bludgeoning",
@@ -24965,10 +25356,13 @@
       "item.tnunlimited.done_armour_helmet": "Bomeen Helmet",
       "block.tnunlimited.purple_cobble_shroomslate_slab": "Purple Cobble Shroomslate Slabs",
       "item.tnunlimited.cloud_boots": "Cloud Boots",
+      "item.tnunlimited.daywalker_helmet": "Daywalker Helmet",
       "item.tnunlimited.gilded_chainmail_pickaxe": "Gilded Chainmail Pickaxe",
       "item.tnunlimited.something_leggings": "Something Leggings",
       "item.tnunlimited.vambrace": "Vambrace",
       "item.tnunlimited.iron_band": "Iron Band",
+      "item.tnunlimited.daywalker_boots": "Daywalker Boots",
+      "item.tnunlimited.divine_codex_p": "Divine Codex Projectile",
       "item.tnunlimited.top_hat_helmet": "Top Hat Helmet",
       "item.tnunlimited.titanium": "Titanium Ingot",
       "effect.tnunlimited.instant_depleting": "Instant Depletion",
@@ -25000,6 +25394,7 @@
       "gui.tnunlimited.stat_sheet.label_varintegerfamiliararmordispla": "\u003cVAR:integer:familiarArmorDisplay\u003e",
       "gui.tnunlimited.stat_sheet.button_empty": "\u003e",
       "item.minecraft.splash_potion.effect.instant_depletion_ii": "Splash Potion of Instant Depletion",
+      "item.tnunlimited.jotunnheart": "Jotunnheart",
       "item.tnunlimited.heartcore": "Heartcore",
       "item.minecraft.tipped_arrow.effect.depleting_ii": "Arrow of Depleting",
       "effect.tnunlimited.helmet_layer_2": "Helmet Layer 2",

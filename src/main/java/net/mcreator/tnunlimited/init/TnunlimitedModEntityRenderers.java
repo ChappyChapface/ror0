@@ -137,5 +137,6 @@ public class TnunlimitedModEntityRenderers {
 		event.registerEntityRenderer(TnunlimitedModEntities.KKOREUL_BULLET.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.KKOREUL_MINION.get(), KkoreulMinionRenderer::new);
 		event.registerEntityRenderer(TnunlimitedModEntities.KKOREUL.get(), KkoreulRenderer::new);
+		event.registerEntityRenderer(TnunlimitedModEntities.DIVINE_CODEX_P.get(), ThrownItemRenderer::new);
 	}
 }

@@ -33,6 +33,7 @@ import net.mcreator.tnunlimited.client.model.Modelender_protector;
 import net.mcreator.tnunlimited.client.model.Modeldioritehelmet;
 import net.mcreator.tnunlimited.client.model.ModeldioriteChestplate;
 import net.mcreator.tnunlimited.client.model.Modeldeceased;
+import net.mcreator.tnunlimited.client.model.Modeldaywalker;
 import net.mcreator.tnunlimited.client.model.Modelcustom_model;
 import net.mcreator.tnunlimited.client.model.Modelcrow;
 import net.mcreator.tnunlimited.client.model.Modelbloodrip_shoot;
@@ -97,6 +98,7 @@ public class TnunlimitedModModels {
 		event.registerLayerDefinition(Modelfrostburnt.LAYER_LOCATION, Modelfrostburnt::createBodyLayer);
 		event.registerLayerDefinition(Modelwitch_hat.LAYER_LOCATION, Modelwitch_hat::createBodyLayer);
 		event.registerLayerDefinition(ModelProphetHelmet.LAYER_LOCATION, ModelProphetHelmet::createBodyLayer);
+		event.registerLayerDefinition(Modeldaywalker.LAYER_LOCATION, Modeldaywalker::createBodyLayer);
 		event.registerLayerDefinition(Modelbloodrip_shoot.LAYER_LOCATION, Modelbloodrip_shoot::createBodyLayer);
 		event.registerLayerDefinition(Modelseraph_wings.LAYER_LOCATION, Modelseraph_wings::createBodyLayer);
 		event.registerLayerDefinition(ModelIceShootSword.LAYER_LOCATION, ModelIceShootSword::createBodyLayer);
