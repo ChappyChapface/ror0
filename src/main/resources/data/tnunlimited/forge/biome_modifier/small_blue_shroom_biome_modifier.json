@@ -1,6 +1,9 @@
 {
   "type": "forge:add_features",
-  "biomes": "tnunlimited:blue_shrooms_biome",
+  "biomes": [
+    "tnunlimited:blue_shrooms_biome",
+    "dripstone_caves"
+  ],
   "features": "tnunlimited:small_blue_shroom",
-  "step": "surface_structures"
+  "step": "underground_structures"
 }

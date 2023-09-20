@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -47,7 +48,7 @@ public class SmallBlueShroomFeature extends Feature<NoneFeatureConfiguration> {
 
 	public SmallBlueShroomFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(TnunlimitedModBlocks.SHROOM_GRASS.get(), TnunlimitedModBlocks.BLUE_SHROOMSLATE.get());
+		base_blocks = List.of(TnunlimitedModBlocks.SHROOM_GRASS.get(), TnunlimitedModBlocks.BLUE_SHROOMSLATE.get(), TnunlimitedModBlocks.PURPLE_COBBLE_SHROOMSLATE.get());
 	}
 
 	@Override
@@ -60,11 +61,12 @@ public class SmallBlueShroomFeature extends Feature<NoneFeatureConfiguration> {
 			return false;
 		boolean anyPlaced = false;
 		if ((context.random().nextInt(1000000) + 1) <= 800000) {
-			int count = context.random().nextInt(2) + 3;
+			int count = context.random().nextInt(4) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
+				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
+				j = Mth.nextInt(context.random(), 8 + context.level().getMinBuildHeight(), Math.max(j, 9 + context.level().getMinBuildHeight()));
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
 				BlockPos spawnTo = new BlockPos(i + 6, j + 0, k + 3);

@@ -1,6 +1,8 @@
 
 package net.mcreator.tnunlimited.block;
 
+import net.minecraftforge.common.PlantType;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -53,7 +55,8 @@ public class BlueShroomThronsBlock extends FlowerBlock {
 
 	@Override
 	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(TnunlimitedModBlocks.BLUE_SHROOMSLATE.get()) || groundState.is(Blocks.GRAVEL) || groundState.is(TnunlimitedModBlocks.SHROOM_GRASS.get()) || groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT);
+		return groundState.is(TnunlimitedModBlocks.BLUE_SHROOMSLATE.get()) || groundState.is(Blocks.GRAVEL) || groundState.is(TnunlimitedModBlocks.SHROOM_GRASS.get()) || groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT)
+				|| groundState.is(TnunlimitedModBlocks.PURPLE_COBBLE_SHROOMSLATE.get());
 	}
 
 	@Override
@@ -64,8 +67,13 @@ public class BlueShroomThronsBlock extends FlowerBlock {
 	}
 
 	@Override
+	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
+		return PlantType.CAVE;
+	}
+
+	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		BlueShroomThronsMobplayerCollidesWithPlantProcedure.execute(entity);
+		BlueShroomThronsMobplayerCollidesWithPlantProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 }
