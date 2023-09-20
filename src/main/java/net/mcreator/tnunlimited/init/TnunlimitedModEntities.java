@@ -70,6 +70,7 @@ import net.mcreator.tnunlimited.entity.FrostAntAlateEntity;
 import net.mcreator.tnunlimited.entity.EnemySignalEntity;
 import net.mcreator.tnunlimited.entity.EnderProtectorEntity;
 import net.mcreator.tnunlimited.entity.DuneSpiderEntity;
+import net.mcreator.tnunlimited.entity.DivineCodexPEntity;
 import net.mcreator.tnunlimited.entity.DiamondSpikeEntity;
 import net.mcreator.tnunlimited.entity.CoronerEntity;
 import net.mcreator.tnunlimited.entity.CoffeePotBug1Entity;
@@ -268,6 +269,8 @@ public class TnunlimitedModEntities {
 					.sized(0.68f, 1.1f));
 	public static final RegistryObject<EntityType<KkoreulEntity>> KKOREUL = register("kkoreul",
 			EntityType.Builder.<KkoreulEntity>of(KkoreulEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KkoreulEntity::new).fireImmune().sized(0.6f, 2.2f));
+	public static final RegistryObject<EntityType<DivineCodexPEntity>> DIVINE_CODEX_P = register("projectile_divine_codex_p",
+			EntityType.Builder.<DivineCodexPEntity>of(DivineCodexPEntity::new, MobCategory.MISC).setCustomClientFactory(DivineCodexPEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

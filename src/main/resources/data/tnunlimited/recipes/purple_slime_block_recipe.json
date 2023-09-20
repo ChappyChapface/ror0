@@ -6,20 +6,20 @@
   ],
   "key": {
     "0": {
-      "item": "tnunlimited:sticky_purple_slime"
+      "item": "tnunlimited:deleted_mod_element"
     },
     "1": {
-      "item": "tnunlimited:sticky_purple_slime"
+      "item": "tnunlimited:deleted_mod_element"
     },
     "2": {
-      "item": "tnunlimited:sticky_purple_slime"
+      "item": "tnunlimited:deleted_mod_element"
     },
     "3": {
-      "item": "tnunlimited:sticky_purple_slime"
+      "item": "tnunlimited:deleted_mod_element"
     }
   },
   "result": {
-    "item": "tnunlimited:purple_slime_block",
+    "item": "tnunlimited:deleted_mod_element",
     "count": 1
   }
 }

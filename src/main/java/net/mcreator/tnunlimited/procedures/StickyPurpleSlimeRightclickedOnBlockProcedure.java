@@ -1,20 +1,8 @@
 package net.mcreator.tnunlimited.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.tnunlimited.init.TnunlimitedModBlocks;
+import javax.annotation.Nullable;
 
 public class StickyPurpleSlimeRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Direction direction) {
@@ -33,7 +21,7 @@ public class StickyPurpleSlimeRightclickedOnBlockProcedure {
 			}
 		} else if (direction == Direction.NORTH) {
 			if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == Blocks.CAVE_AIR) {
-				world.setBlock(new BlockPos(x, y, z - 1), TnunlimitedModBlocks.PURPLE_SLIME_WALL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y, z - 1), TnunlimitedModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.NORTH;
 					BlockPos _pos = new BlockPos(x, y, z - 1);
@@ -57,7 +45,7 @@ public class StickyPurpleSlimeRightclickedOnBlockProcedure {
 			}
 		} else if (direction == Direction.SOUTH) {
 			if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.CAVE_AIR) {
-				world.setBlock(new BlockPos(x, y, z + 1), TnunlimitedModBlocks.PURPLE_SLIME_WALL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y, z + 1), TnunlimitedModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.SOUTH;
 					BlockPos _pos = new BlockPos(x, y, z + 1);
@@ -81,7 +69,7 @@ public class StickyPurpleSlimeRightclickedOnBlockProcedure {
 			}
 		} else if (direction == Direction.WEST) {
 			if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.CAVE_AIR) {
-				world.setBlock(new BlockPos(x - 1, y, z), TnunlimitedModBlocks.PURPLE_SLIME_WALL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x - 1, y, z), TnunlimitedModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.WEST;
 					BlockPos _pos = new BlockPos(x - 1, y, z);
@@ -105,7 +93,7 @@ public class StickyPurpleSlimeRightclickedOnBlockProcedure {
 			}
 		} else if (direction == Direction.EAST) {
 			if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.CAVE_AIR) {
-				world.setBlock(new BlockPos(x + 1, y, z), TnunlimitedModBlocks.PURPLE_SLIME_WALL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + 1, y, z), TnunlimitedModItems.DELETED_MOD_ELEMENT.get().defaultBlockState(), 3);
 				{
 					Direction _dir = Direction.EAST;
 					BlockPos _pos = new BlockPos(x + 1, y, z);

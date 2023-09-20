@@ -1,18 +1,12 @@
 package net.mcreator.tnunlimited.procedures;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.tnunlimited.init.TnunlimitedModBlocks;
+import javax.annotation.Nullable;
 
 public class PurpleSlimeWallNeighbourBlockChangesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == TnunlimitedModBlocks.PURPLE_SLIME_WALL.get()) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == TnunlimitedModItems.DELETED_MOD_ELEMENT.get()) {
 			if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.AIR && (new Object() {
 				public Direction getDirection(BlockPos pos) {
 					BlockState _bs = world.getBlockState(pos);
@@ -82,7 +76,7 @@ public class PurpleSlimeWallNeighbourBlockChangesProcedure {
 					world.destroyBlock(_pos, false);
 				}
 			}
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == TnunlimitedModBlocks.PURPLE_SLIME_WALL.get()) {
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == TnunlimitedModItems.DELETED_MOD_ELEMENT.get()) {
 			if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 				{
 					BlockPos _pos = new BlockPos(x, y, z);
